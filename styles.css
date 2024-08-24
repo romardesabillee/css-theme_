@@ -1,0 +1,91 @@
+
+:root {
+    --bg-color: #000;
+    --color: #fff;
+    --p-color: #3ff88c;
+
+    --text-md: 18px;
+}
+
+.light-theme {
+    --bg-color: #fff;
+    --color: #000;
+    --p-color: #b2bb39;
+}
+
+.primary-theme {
+    --bg-color: #181818;
+    --color: #dbdbdb;
+    --p-color: #4283fc;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color);
+    transition: all 100ms ease-in-out;
+}
+
+p {
+    color: var(--p-color);
+    font-size: var(--text-md);
+}
+
+.p-text-2 {
+    color: var(--p-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav button.theme {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ff0e0e;
+    cursor: pointer;
+}
+
+.theme.default {
+    background-color: #000;
+}
+.theme.light {
+    background-color: #fff;
+}
+.theme.primary {
+    background-color: #3654b8;
+}   
+
+.flex-container {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.flex-container div {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(77, 77, 223);
+}
+.flex-container div:nth-child(2) {
+    flex-grow: 2;
+    align-self: flex-end;
+    background-color: rgb(61, 207, 134);
+    order: -1;
+    height: 100%;
+}
+.flex-container div:nth-child(3) {
+    background-color: rgb(163, 177, 38);
+}
+.flex-container div:nth-child(4) {
+    background-color: rgb(48, 218, 209);
+}
+.flex-container div:nth-child(4) {
+    background-color: rgb(255, 27, 225);
+}
